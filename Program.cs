@@ -38,3 +38,5 @@ using System.Diagnostics.Contracts;
 
 Console.WriteLine("realmadrid chempion");
 Console.WriteLine("assalom");
+Console.WriteLine("realmadrid chempion");
+Console.WriteLine("assalom");
