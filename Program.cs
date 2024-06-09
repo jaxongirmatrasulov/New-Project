@@ -36,33 +36,5 @@ using System.Diagnostics.Contracts;
 
 //JAHON CHEMPIONATIGA YOLLANMA DASTURI.
 
-string teamName;
-int ball;
-Console.WriteLine("Jamoa nomini kiriting:");
-teamName = Console.ReadLine();
-Console.WriteLine("To`plagan ochqo:");
-string ochqo = Console.ReadLine();
-ball = Convert.ToInt32(ochqo);
-bool overal1 = ball is < 10 or > 6;
-bool overall = ball > 5;
-bool overalll = ball == 5;
-
-if (overal1)
-{
-    Console.WriteLine("siz 1-orin");
-}
-else if (overall)
-{
-    Console.WriteLine("siz 2-orin");
-}
-else if (overal)
-{
-    Console.WriteLine("siz 3-orin");
-}
-else
-{
-    Console.WriteLine("siz musobaqani tark etdingz");
-}
-
-
 Console.WriteLine("realmadrid chempion");
+Console.WriteLine("assalom");

@@ -101,3 +101,74 @@ Git add . bizga fayllarni qoshib bergan bolsa endi bizga fayllarni pechatla yani
 Bizni keyingi qiladigan ishimiz ![rasm](c:\Users\IDS\Desktop\Снимок.PNG) mana shunday oyna chiqarib beradi va bu yerda korib turganimizdek bizga user name larimizni qanday yozishni korsatib qoygan.
 
 Keyingi va oxirgi qiladigan buyruqimiz bu **git push origin main** boladi. Bu bizga githubimizda barcha fayllarni korsatib chiqarib beradi.
+
+
+**PascalCase** => har bir sozning bosh harfi katta harf bilan yoziladi.
+
+**camelCase**  => birinchi soz kichik har bilan qolganlari katta harf bilan yoziladi.
+
+**kebab-case** => hamma sozlar kichik harf bilan lekin ortasida chiziqcha bilan yoziladi.
+
+**snake_case** => hammasi kichik harf bilan lekin ortada pastki chiziqcha bilan yoziladi.
+
+
+># BUTUN SONLAR 
+
+short  ->  2 byte -> 16 bit -> [ - (2^16/2);  2^16/2 ]
+
+int    ->  4 byte -> 32 bit -> [ - (2^32/2);  2^32/2 ]
+
+long   ->  8 byte -> 64 bit -> [ - (2^64/2);  2^64/2 ]
+
+># MUSBAT SONLAR QABUL QILSIN DESAK
+
+ushort  ->  2 byte -> 16 bit -> [ 0;  2^16 ]
+
+uint    ->  4 byte -> 32 bit -> [ 0;  2^32 ]
+
+ulong   ->  8 byte -> 64 bit -> [ 0;  2^64 ]
+
+
+># BOOLEAN  XA/YOQ; MUSBAT/MANFIY;
+
+bool  -> 1  bit ->  true, false; (1,0);
+
+bool ni nomlashni quydagicha tavsiya qilishadi => is yoki are bilan boshlashni.
+
+bool isArmyAge = 18 < isArmyAge ; 
+
+bool isStudentHappy = true ; 
+
+
+># STRING 
+
+string qanchalik uzun bolishiga qarab 2 byte qoshilib boravaeradi.
+
+string matn = "hello world";  bu matnda bzida 11 ta harf qatnashgan shuning uchun bz 11 ni 2 ga kopaytrsak qiymati kelib chiqadi yani 22 byte ga teng string.
+
+
+># CHAR
+
+char bu bitta ' '; qoshtirnoq bilan o`lchanadi yani klaviaturadagi har qanday harf son belgi hammasi char ga kiradi.
+
+char belgi = 'a';
+char belgi = '@'; 
+cahr belgi = '!';
+
+># FLOAT, DOUBLE, DECIMAL : kasr sonlar 1.5, 22.2568,5.04;
+
+float da biz qaysi oraliqdagi sonlarni qabul qiladi deb emas qanday aniqlikdagi sonlarni oz ichiga oladi deb qarashni boshlaymiz.
+
+float  -> 4 byte -> 32 bit -> float nuqta yoki verguldan keyin 6 son gacha aniqlikdagi sonlarni oz ichiga oladi.
+
+double  -> 8 byte -> 64 bit -> 15 ta son gacha aniqlikda saqlay oladi.
+
+decimal -> 16 byte -> 128 bit -> 28 ta son gaca aniqlikda saqlay oladi yani qabul qiladi.
+
+
+Bular orasida bizga qulayroqi bu **decimal** hisoblanadi yani osonroq.
+
+Misol uchun : 1.5 + 2.3 = 3.8 qiymatini qaytaradi. 
+
+**double** esa bunaqa oddiy odatdagidek korinishda bu ishni bajarmaydi yani 1.5 sonini ichkarida (1 + 1/2) kabi korinishda qoshib hisoblab beradi. tepadagi misolni javobini ham bizga oddiygina 3.8 chiqarib bermaydi 3.854515151 manashunaqa qoldiqlar bilan hisoblab beradi. SHUNING UCHUN HAM DOUBLE PUL HISOB KITOBLAR BILAN ISHLANADIGAN DASTURLARDA IMKON BORICHA ISHLATILINMAYDI!!!!
+
