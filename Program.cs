@@ -64,3 +64,5 @@ else
     Console.WriteLine("siz musobaqani tark etdingz");
 }
 
+
+
