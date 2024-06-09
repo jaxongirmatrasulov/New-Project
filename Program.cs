@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics.Contracts;
 //AYLANANI YUZASINI TOPISH DASTURI.
 // int radius;
 // decimal pi = 3.14m;
@@ -34,9 +33,29 @@ using System.Diagnostics.Contracts;
 // }
 
 
-//JAHON CHEMPIONATIGA YOLLANMA DASTURI.
+//IMTIXONDAN O`TISH DASTURI.
 
-Console.WriteLine("realmadrid chempion");
-Console.WriteLine("assalom");
-Console.WriteLine("realmadrid chempion");
-Console.WriteLine("assalom");
+// string boys ;
+int ballBoys ;
+// string girls ;
+// int ballGirls ;
+
+Console.WriteLine("Yigitlaar malumotlari");
+Console.Write("Ball boys: ");
+string man = Console.ReadLine();
+ballBoys = Convert.ToInt32(man);
+bool overal = ballBoys > 5;
+bool overall = ballBoys is 5 ;
+
+
+if(overal)
+{
+    Console.WriteLine("siz imtihondan otdingiz");
+}else if(overall)
+{
+    Console.WriteLine("siz qayta oqishda davom etasiz");
+}else
+{
+    Console.WriteLine("siz ota olmadinguz");
+}
+
