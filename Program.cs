@@ -35,27 +35,61 @@
 
 //IMTIXONDAN O`TISH DASTURI.
 
-// string boys ;
-int ballBoys ;
-// string girls ;
-// int ballGirls ;
+// int ballBoys ;
 
-Console.WriteLine("Yigitlaar malumotlari");
-Console.Write("Ball boys: ");
-string man = Console.ReadLine();
-ballBoys = Convert.ToInt32(man);
-bool overal = ballBoys > 5;
-bool overall = ballBoys is 5 ;
+// Console.WriteLine("Yigitlaar malumotlari");
+// Console.Write("Ball boys: ");
+// string man = Console.ReadLine();
+// ballBoys = Convert.ToInt32(man);
+// bool overal = ballBoys > 5;
+// bool overall = ballBoys is 5 ;
 
 
-if(overal)
+// if(overal)
+// {
+//     Console.WriteLine("siz imtihondan otdingiz");
+// }else if(overall)
+// {
+//     Console.WriteLine("siz qayta oqishda davom etasiz");
+// }else
+// {
+//     Console.WriteLine("siz ota olmadinguz");
+// }
+
+
+//DTM 
+
+string ismFamilya ;
+int result ;
+
+Console.WriteLine("Ma`lumotingizni kiriting.");
+Console.Write("Ism_familya: ");
+ismFamilya = Console.ReadLine();
+Console.WriteLine("Natijangizni kiriting.");
+Console.Write("Ball: ");
+string score = Console.ReadLine();
+result = Convert.ToInt32(score);
+bool effect = result > 70 ;
+bool effect2 = result <= 70 && result >= 55 ;
+
+bool effect3 = result >= 30 && result <= 50 ;
+
+
+if(effect)
 {
-    Console.WriteLine("siz imtihondan otdingiz");
-}else if(overall)
+    Console.WriteLine("Siz talabalikka tavsiya etildingiz.");
+}else if (effect2)
 {
-    Console.WriteLine("siz qayta oqishda davom etasiz");
+    Console.WriteLine("Siz kantrakt asosida tavsiya etildingiz.");
+}else if(effect3)
+{
+    Console.WriteLine("Siz supper kantrakt asosida tavsiya etildingiz.");
 }else
 {
-    Console.WriteLine("siz ota olmadinguz");
+    Console.WriteLine("Siz talabalikka tavsiya etilmadingiz.");
 }
+
+
+
+
 
